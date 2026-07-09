@@ -1,0 +1,53 @@
+/* Pioneer AI & Data brand lanes for a client context-layer vault.
+   Business Context rides electric (the core), Operations carries the
+   signal orange (where the value is), the rest stay in a harmonious set. */
+
+.theme-light {
+  --lane-context: #0a7ea4;
+  --lane-customers: #0f7b53;
+  --lane-ops: #c2610a;
+  --lane-marketing: #6d3fc8;
+  --lane-prompts: #0a7f84;
+  --lane-system: #516174;
+}
+.theme-dark {
+  --lane-context: #4ab8ff;
+  --lane-customers: #57d69d;
+  --lane-ops: #ff9d4d;
+  --lane-marketing: #b9a1ff;
+  --lane-prompts: #6ee1de;
+  --lane-system: #c3ceda;
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-title {
+  border-left: 3px solid transparent;
+  border-radius: 6px;
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-title .tree-item-icon { color: inherit; }
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-title:not([data-path*="/"]) { font-weight: 600; }
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-title:is([data-path="00 - Business Context"],[data-path^="00 - Business Context/"]) {
+  color: var(--lane-context); border-left-color: var(--lane-context);
+  background-color: color-mix(in srgb, var(--lane-context) 12%, transparent);
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-title:is([data-path="10 - Customers"],[data-path^="10 - Customers/"]) {
+  color: var(--lane-customers); border-left-color: var(--lane-customers);
+  background-color: color-mix(in srgb, var(--lane-customers) 12%, transparent);
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-title:is([data-path="20 - How We Work (SOPs)"],[data-path^="20 - How We Work (SOPs)/"]) {
+  color: var(--lane-ops); border-left-color: var(--lane-ops);
+  background-color: color-mix(in srgb, var(--lane-ops) 12%, transparent);
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-title:is([data-path="30 - Marketing"],[data-path^="30 - Marketing/"]) {
+  color: var(--lane-marketing); border-left-color: var(--lane-marketing);
+  background-color: color-mix(in srgb, var(--lane-marketing) 12%, transparent);
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-title:is([data-path="40 - Prompt Pack"],[data-path^="40 - Prompt Pack/"]) {
+  color: var(--lane-prompts); border-left-color: var(--lane-prompts);
+  background-color: color-mix(in srgb, var(--lane-prompts) 12%, transparent);
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-title:is([data-path="90 - System"],[data-path^="90 - System/"]) {
+  color: var(--lane-system); border-left-color: var(--lane-system);
+  background-color: color-mix(in srgb, var(--lane-system) 12%, transparent);
+}

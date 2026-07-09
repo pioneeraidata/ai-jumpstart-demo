@@ -1,0 +1,9 @@
+{
+  "theme": "system",
+  "accentColor": "#0099FF",
+  "enabledCssSnippets": [
+    "pioneer-brand"
+  ],
+  "interfaceFontFamily": "Inter",
+  "textFontFamily": "Inter"
+}

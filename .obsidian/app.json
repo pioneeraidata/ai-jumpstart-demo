@@ -1,0 +1,8 @@
+{
+  "promptDelete": true,
+  "defaultViewMode": "source",
+  "livePreview": true,
+  "showFrontmatter": false,
+  "tabSize": 2,
+  "alwaysUpdateLinks": true
+}
